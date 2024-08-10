@@ -30,6 +30,8 @@ function previousbg2(){
 
 
 let open=false;
+let loadCompany=false;
+let loadService=false;
 function loadProductMenu() {
     if(open==false){
         document.getElementById("produ").style.display = "block";
@@ -50,7 +52,7 @@ function loadProductMenu() {
 }
 
 
-let loadService=false;
+
 function loadServiceMenu(){
     if(loadService==false){
         document.getElementById("produService").style.display = "block";
@@ -73,7 +75,7 @@ function loadServiceMenu(){
     }
 }
 
-let loadCompany=false;
+
 function loadCompayMenu(){
     if(loadCompany==false){
         document.getElementById("produCompany").style.display = "block";
