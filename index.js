@@ -36,11 +36,11 @@ function loadProductMenu() {
     if(open==false){
         document.getElementById("produ").style.display = "block";
         open=true;
-        if(loadService=true){
+        if(loadService==true){
             document.getElementById("produService").style.display = "none";
             loadService=false;
         }
-        if(loadService=true){
+        if(loadService==true){
             document.getElementById("produCompany").style.display = "none";
             loadCompany=false;
         }
@@ -56,15 +56,15 @@ function loadProductMenu() {
 function loadServiceMenu(){
     if(loadService==false){
         document.getElementById("produService").style.display = "block";
-         if(loadService=true){
+         if(loadService==true){
             document.getElementById("produCompany").style.display = "none";
             loadCompany=false;
         };
-        if(open=true){
+        if(open==true){
             document.getElementById("produ").style.display = "none"; 
             open=false;
         }
-        if(loadService=true){
+        if(loadService==true){
             document.getElementById("produCompany").style.display = "none";
             loadCompany=false;
         }
@@ -80,16 +80,14 @@ function loadCompayMenu(){
     if(loadCompany==false){
         document.getElementById("produCompany").style.display = "block";
         loadService=true;
-        if(open=true){
+        if(open==true){
             document.getElementById("produ").style.display = "none"; 
             open=false;
         }
-        if(loadService=true){
+        if(loadService==true){
             document.getElementById("produService").style.display = "none";
             loadService=false
         }
-
-
     }else{
         document.getElementById("produCompany").style.display = "none";
         loadCompany=false;
