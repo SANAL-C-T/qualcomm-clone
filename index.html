@@ -1,327 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>qualcomm clone</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./index.css" />
-    <script src="./index.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>qualcomm clone</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./index.css" />
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./download.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Products
-              </a>
-              <div class=" dropdown-menu ">
+<body>
 
-              <ul class="d-flex" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item " href="#">Mobile</a></li>
-                      
-                <ul class="d-block">
-                  <li class="droplist">SNAPDRAGON MOBILE</li>
-                  <li class="droplist">Smartphone</li>
-                  <li class="droplist">Laptops & Tablets</li>
-                  <li class="droplist">XR VR AR MR</li>
-                  <li class="droplist">Wearables</li>
-                </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./download.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- from here the dropdown menu -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown" id="productMenu">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"  onclick="loadProductMenu()">
+              Products
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" onclick="loadServiceMenu()">
+              Service
+            </a>
+          </li>
 
 
-                <li><a class="dropdown-item" href="#">Automotive</a></li>
-                <ul>
-                     <li class="droplist">SNAPDRAGON <br>DIGITAL CHASSIS</li>
-                    <li class="droplist">ADAS/AD</li>
-                    <li class="droplist">Cockpit</li>
-                    <li class="droplist">Connectivity</li>
-                    <li class="droplist">C-v2x</li>
-                    <li class="droplist"> car to cloud</li>
-                </ul>
-
-                <li><a class="dropdown-item" href="#">Internet of things</a></li>
-                <ul>
-                    <li class="droplist">consumer</li>
-                    <li class="droplist">audio</li>
-                    <li class="droplist">cameras</li>
-                    <li class="droplist">smart homes</li>
-                    <li class="droplist">smart fitness</li>
-                </ul>
-
-                <li><a class="dropdown-item" href="#">Internet of things</a></li>
-                <ul>
-                  <li class="droplist">buildings & enterprise</li>
-                  <li class="droplist">retail & payments</li>
-                  <li class="droplist">Azure</li>
-                  <li class="droplist">industrial & automation</li>
-                  <li class="droplist">energy & utilities</li>
-                </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" onclick="loadCompayMenu()">
+              Company
+            </a>
+          </li>
 
 
+        </ul>
 
-                <li><a class="dropdown-item" href="#">Internet of things</a></li>
-                <ul>
-                              <li class="droplist">cellular network</li>
-                              <li class="droplist">WiFi Network</li>
-                </ul>
-
-                <li><a class="dropdown-item" href="#">Core Technology</a></li>
-                <ul>
-                  <li class="droplist">5G</li>
-                          <li class="droplist">Artificial intelligence</li>
-                          <li class="droplist">Bluetooth</li>
-                          <li class="droplist">Modern RF System</li>
-                          <li class="droplist">processors</li>
-                          <li class="droplist">RFFE filters</li>
-                          <li class="droplist">WiFi</li>
-                </ul>
-
-              </ul>
-              </div>
-            </li>
-
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Service
-              </a>
-              <div class=" dropdown-menu ">
-
-              <ul class="d-flex" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Support portals</a></li>
-            
-                <ul>
-                  <li class="droplist">CreatePoint</li>
-                  <li class="droplist">ChipCode</li>
-                  <li class="droplist">Sales Center</li>
-                  <li class="droplist">Developer Network</li>
-                  <li class="droplist">Cases</li>
-                  <li class="droplist">Package Manager</li>
-                </ul>
-
-
-                <li><a class="dropdown-item" href="#">Third party support</a></li>
-                <ul>
-                  <li class="droplist">Advantage Network</li>
-                  <li class="droplist">Distributors</li>
-                  <li class="droplist">Design Centers</li>
-                  <li class="droplist">Hardware Providers</li>
-                  <li class="droplist">Sales Representatives</li>
-                  <li class="droplist">Software Providers</li>
-                </ul>
-
-                <li><a class="dropdown-item" href="#">Additional Support</a></li>
-                <ul>
-                  <li class="droplist">Product Support</li>
-                  <li class="droplist">Product Security</li>
-                   <li class="droplist">Contact Us</li>
-                  <li class="droplist">5G Training</li>
-                </ul>
-
-            
-
-              </ul>
-              </div>
-            </li>
-
-
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Company
-              </a>
-              <div class=" dropdown-menu ">
-
-              <ul class="d-flex" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">News & media</a></li>
-                      
-                <ul>
-                  <li class="droplist">Media Center</li>
-                  <li class="droplist">OnQ Blog</li>
-                </ul>
-
-
-                <li><a class="dropdown-item" href="#">Research</a></li>
-                <ul>
-                  <li class="droplist">5G & Wireless Technology</li>
-                  <li class="droplist">Artificial Intelligence</li>
-                  <li class="droplist">Extended Reality</li>
-                  <li class="droplist">University Relations</li>
-                </ul>
-
-                <li><a class="dropdown-item" href="#">our business</a></li>
-                <ul>
-                  <li class="droplist">One Technology Roadmap</li>
-                  <li class="droplist">Mobile</li>
-                   <li class="droplist">Internet of Things</li>
-                  <li class="droplist">Automotive</li>
-                  <li class="droplist">Technology Licensing</li>
-                </ul>
-
-                <li><a class="dropdown-item" href="#">our company</a></li>
-                <ul>
-                      <li class="droplist">About Us</li>
-                      <li class="droplist">Careers</li>
-                      <li class="droplist">ESG + Corporate Responsibility</li>
-                      <li class="droplist">Events</li>
-                      <li class="droplist">Investor Relations</li>
-                      <li class="droplist">Locations</li>
-                </ul>
-
-
-
-
-              </ul>
-              </div>
-            </li>
-
-
-
-
-
-          
-          </ul>
-
-
-
-
-
-          <form class="d-flex">
-            
-            <button class="btn" type="submit"><i class='bx bx-search' ></i></button>
-            <button class="btn" type="submit"><i class='bx bx-user'></i></button>
-          </form>
-
-
-
-
-        </div>
+        <form class="d-flex">
+          <button class="btn" type="submit"><i class='bx bx-search'></i></button>
+          <button class="btn" type="submit"><i class='bx bx-user'></i></button>
+        </form>
       </div>
-    </nav>
+  </nav>
 
-  
+<div id="dynamics">
+
+</div>
+
+  <!-- dropdown menu for products -->
+  <div class=" dropdown-menu  " id="produ">
+    <ul class=" FIRSTcONTAINER" aria-labelledby="navbarDropdown" id="subProdu">
+      <li><a class="dropdown-item " href="#">Mobile</a>
+
+      <ul class="d-block">
+        <li class="droplist">SNAPDRAGON MOBILE</li>
+        <li class="droplist">Smartphone</li>
+        <li class="droplist">Laptops & Tablets</li>
+        <li class="droplist">XR VR AR MR</li>
+        <li class="droplist">Wearables</li>
+      </ul>
+    </li>
+
+      <li><a class="dropdown-item" href="#">Automotive</a>
+      <ul>
+        <li class="droplist">SNAPDRAGON <br>DIGITAL CHASSIS</li>
+        <li class="droplist">ADAS/AD</li>
+        <li class="droplist">Cockpit</li>
+        <li class="droplist">Connectivity</li>
+        <li class="droplist">C-v2x</li>
+        <li class="droplist"> car to cloud</li>
+      </ul>
+    </li>
+      <li><a class="dropdown-item" href="#">Internet of things</a>
+      <ul>
+        <li class="droplist">consumer</li>
+        <li class="droplist">audio</li>
+        <li class="droplist">cameras</li>
+        <li class="droplist">smart homes</li>
+        <li class="droplist">smart fitness</li>
+      </ul>
+    </li>
+      <li><a class="dropdown-item" href="#">Internet of things</a>
+      <ul>
+        <li class="droplist">buildings & enterprise</li>
+        <li class="droplist">retail & payments</li>
+        <li class="droplist">Azure</li>
+        <li class="droplist">industrial & automation</li>
+        <li class="droplist">energy & utilities</li>
+      </ul>
+    </li>
 
 
-<!-- the banner section -->
+      <li><a class="dropdown-item" href="#">Internet of things</a>
+      <ul>
+        <li class="droplist">cellular network</li>
+        <li class="droplist">WiFi Network</li>
+      </ul>
+    </li>
+      <li><a class="dropdown-item" href="#">Core Technology</a>
+      <ul>
+        <li class="droplist">5G</li>
+        <li class="droplist">Artificial intelligence</li>
+        <li class="droplist">Bluetooth</li>
+        <li class="droplist">Modern RF System</li>
+        <li class="droplist">processors</li>
+        <li class="droplist">RFFE filters</li>
+        <li class="droplist">WiFi</li>
+      </ul>
+    </li>
+    </ul>
+  </div>
 
 
-<div class="card bg-dark text-white">
+  <!-- service drop -->
+  <div class=" dropdown-menu " id="produService">
+
+    <ul class= aria-labelledby="navbarDropdown" id="subService">
+      <li><a class="dropdown-item" href="#">Support portals</a>
+      <ul>
+        <li class="droplist">CreatePoint</li>
+        <li class="droplist">ChipCode</li>
+        <li class="droplist">Sales Center</li>
+        <li class="droplist">Developer Network</li>
+        <li class="droplist">Cases</li>
+        <li class="droplist">Package Manager</li>
+      </ul>
+    </li>
+
+      <li><a class="dropdown-item" href="#">Third party support</a>
+      <ul>
+        <li class="droplist">Advantage Network</li>
+        <li class="droplist">Distributors</li>
+        <li class="droplist">Design Centers</li>
+        <li class="droplist">Hardware Providers</li>
+        <li class="droplist">Sales Representatives</li>
+        <li class="droplist">Software Providers</li>
+      </ul>
+    </li>
+      <li><a class="dropdown-item" href="#">Additional Support</a>
+      <ul>
+        <li class="droplist">Product Support</li>
+        <li class="droplist">Product Security</li>
+        <li class="droplist">Contact Us</li>
+        <li class="droplist">5G Training</li>
+      </ul>
+    </li>
+    </ul>
+  </div>
+
+  <!-- company drop -->
+
+
+  <div class=" dropdown-menu " id="produCompany">
+
+    <ul class="d-flex" aria-labelledby="navbarDropdown" id="subComp">
+      <li><a class="dropdown-item" href="#">News & media</a>
+
+      <ul>
+        <li class="droplist">Media Center</li>
+        <li class="droplist">OnQ Blog</li>
+      </ul>
+    </li>
+
+      <li><a class="dropdown-item" href="#">Research</a>
+      <ul>
+        <li class="droplist">5G & Wireless Technology</li>
+        <li class="droplist">Artificial Intelligence</li>
+        <li class="droplist">Extended Reality</li>
+        <li class="droplist">University Relations</li>
+      </ul>
+    </li>
+      <li><a class="dropdown-item" href="#">our business</a>
+      <ul>
+        <li class="droplist">One Technology Roadmap</li>
+        <li class="droplist">Mobile</li>
+        <li class="droplist">Internet of Things</li>
+        <li class="droplist">Automotive</li>
+        <li class="droplist">Technology Licensing</li>
+      </ul>
+    </li>
+      <li><a class="dropdown-item" href="#">our company</a>
+      <ul>
+        <li class="droplist">About Us</li>
+        <li class="droplist">Careers</li>
+        <li class="droplist">ESG + Corporate Responsibility</li>
+        <li class="droplist">Events</li>
+        <li class="droplist">Investor Relations</li>
+        <li class="droplist">Locations</li>
+      </ul>
+    </li>
+    </ul>
+  </div>
+  <!-- upto here the drop down menu -->
+
+
+
+
+
+
+
+  <!-- the banner section -->
+  <div class="card bg-dark text-white">
     <img src="./Edge-of-Possible.png" class="card-img">
     <div class="card-img-overlay d-flex ">
-        <div class=" align-self-center mx-auto my-4">
-      <h1 class="card-title"><b>Welcome to the <br />Edge of Possible.</b></h1>
-      <h3 class="card-text">Leading Generative AI on-device.</h3>
-      <button id="bt1">watch film <i class='bx bx-play-circle'></i></button>
-      <button id="bt2">learn more</button>
+      <div class=" align-self-center mx-auto my-4">
+        <h1 class="card-title"><b>Welcome to the <br />Edge of Possible.</b></h1>
+        <h3 class="card-text">Leading Generative AI on-device.</h3>
+        <button id="bt1">watch film <i class='bx bx-play-circle'></i></button>
+        <button id="bt2">learn more</button>
+      </div>
     </div>
+  </div>
+  <!-- .................................... -->
+  <div class="two container-fluid">
+    <div class="row gx-0">
+      <div class="leftt col-md-6">
+        <div class="card bg-dark text-white">
+          <img src="./wos-header-2.webp" class="card-img img-fluid">
+          <div class="box  card-img-overlay d-flex">
+            <div class=" align-self-center mx-auto my-4">
+              <h3 class="card-text">Build apps for Windows on <br> Snapdragon.</h3>
+              <button id="bt4">Learn how</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="rightt col-md-6">
+        <div class="card bg-dark text-white">
+          <img src="./Untitled.jpg" width="600" height="527.18" class="card-img img-fluid">
+          <div class="box2  card-img-overlay d-flex">
+            <div class=" align-self-center mx-auto">
+              <h3 class="card-text">Introducing Snapdragon <br> Digital Chassis.</h3>
+              <button id="bt4">Learn more </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ................................ -->
+
+  <div class="two container-fluid">
+    <div class="row gx-0">
+      <div class="lefttt col-md-6 ">
+        <div class="card bg-dark text-white">
+          <img src="./sam.jpg" class="card-img img-fluid">
+          <div class="card-img-overlay d-flex">
+            <div class=" align-self-center mx-auto"></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="righttt col-md-6">
+
+        <div class="card bg-dark text-white">
+          <img src="./ggg.jpg" class="card-img img-fluid">
+          <div class="ttt card-img-overlay img-fluid d-flex">
+            <div class=" align-self-center mx-auto">
+              <h3 class=" card-text">Snapdragon powers the Samsung Galaxy S23.</h3>
+              <button id="bt4">Explore snapdragone 8 gen 2 </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- .................................... -->
- <div class="two container-fluid">
+  <!-- ........................................ -->
+  <div class="three container-fluid">
     <div class="row gx-0">
-        <div class="leftt col-md-6">
-            <div class="card bg-dark text-white">
-                <img src="./wos-header-2.webp" class="card-img img-fluid">
-                <div class="box  card-img-overlay d-flex">
-                    <div class=" align-self-center mx-auto my-4">
-                    <h3 class="card-text">Build apps for Windows on <br> Snapdragon.</h3>
-                   <button id="bt4">Learn how</button>
-                   </div>
-                </div>
-              </div>
-        </div>
+      <div class="leftttt col-md-10 ">
+        <h1>Our Solutions</h1>
+      </div>
 
 
-        <div class="rightt col-md-6">
-            <div class="card bg-dark text-white">
-                <img src="./Untitled.jpg" width="600" height="527.18" class="card-img img-fluid">
-                <div class="box2  card-img-overlay d-flex">
-                    <div class=" align-self-center mx-auto">
-                    <h3 class="card-text">Introducing Snapdragon <br> Digital Chassis.</h3>
-                   <button id="bt4">Learn more </button>
-                   </div>
-                </div>
-              </div>
-        </div>
+      <div class="rightttt col-md-2 ">
+        <button id="bt5">product finder </button>
+
+      </div>
     </div>
- </div>
-<!-- ................................ -->
- 
-<div class="two container-fluid">
-    <div class="row gx-0">
-        <div class="lefttt col-md-6 ">
-            <div class="card bg-dark text-white">
-                <img src="./sam.jpg" class="card-img img-fluid">
-                <div class="card-img-overlay d-flex">
-                    <div class=" align-self-center mx-auto"></div>
-                    
-                </div>
-              </div>
-        </div>
-        <div class="righttt col-md-6">
-            
-            <div class="card bg-dark text-white">
-                <img src="./ggg.jpg" class="card-img img-fluid">
-                <div class="ttt card-img-overlay img-fluid d-flex">
-                    <div class=" align-self-center mx-auto">
-                    <h3 class=" card-text">Snapdragon powers the Samsung Galaxy S23.</h3>
-                   <button id="bt4">Explore snapdragone 8 gen 2 </button>
-                </div>
-                </div>
-              </div>
-        </div>
-    </div>
- </div>
+  </div>
 
-
- <!-- ........................................ -->
- <div class="three container-fluid">
-    <div class="row gx-0">
-        <div class="leftttt col-md-10 ">
-         <h1>Our Solutions</h1>
-                </div>
-              
-
-        <div class="rightttt col-md-2 ">
-                <button id="bt5">product finder </button>
-               
-              </div>
-        </div>
- </div>   
-
- <nav class="slider  nav  container-fluid">
+  <nav class="slider  nav  container-fluid">
     <a class="nav-link active" aria-current="page" href="#"><b>Mobile</b></a>
     <a class="nav-link" href="#"><b>Automotive</b> </a>
     <a class="nav-link" href="#"> <b>Consumer IoT</b></a>
@@ -329,267 +307,281 @@
     <a class="nav-link" href="#"> <b>Networking IoT</b></a>
   </nav>
 
- 
-<!-- ........................................ -->
 
-        
-<div class="four container-fluid h-100">
+  <!-- ........................................ -->
+
+
+  <div class="four container-fluid h-100">
     <div class="row gx-0">
-        <div class="pppp col-lg-6"><!-- container class added on 7/10/2023 -->
-            <div class="row gx-0">
-                <div class="paa container-fluid col-lg-6">
-                    <div class="card h-100 p-3 pt-5 mt-2 shadow"style="min-width: 18rem;" >
-                        <div class="picc"><img src="./smartphone.svg"  width="39" height="60" class="card-img-top"></div>
-                        <div class="card-body">
-                            <h5>Smartphones</h5>
-                          <p class="card-text">Fueling devices with exceptional performance and power efficiency.</p>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="paa container-fluid col-lg-6">
-                    <div class="card h-100 p-3 pt-5 mt-2 shadow" style="min-width: 18rem;">
-                        <div class="picc"><img src="./laptop.svg"  width="56" height="51" class="card-img-top"></div>
-                        
-                        <div class="card-body">
-                            <h5>Compute</h5>
-                          <p class="card-text"> Connect, create, and collaborate from virtually anywhere.</p>
-                        </div>
-                      </div>
-                </div>
+      <div class="pppp col-lg-6"><!-- container class added on 7/10/2023 -->
+        <div class="row gx-0">
+          <div class="paa container-fluid col-lg-6">
+            <div class="card h-100 p-3 pt-5 mt-2 shadow" style="min-width: 18rem;">
+              <div class="picc"><img src="./smartphone.svg" width="39" height="60" class="card-img-top"></div>
+              <div class="card-body">
+                <h5>Smartphones</h5>
+                <p class="card-text">Fueling devices with exceptional performance and power efficiency.</p>
               </div>
+            </div>
 
-                <div class="row gx-0">
-                <div class="paa  container-fluid  col-lg-6">
-                    <div class="card h-100 p-3 pt-5 mt-3 shadow"style="min-width: 18rem;">
-                        <div class="picc"><img src="./XR.svg" width="67" height="75"  class="card-img-top"></div>
-                        <div class="card-body">
-                            <h5>XR</h5>
-                          <p class="card-text"> Our extended reality technologies bridge the gap between physical and virtual worlds.</p>
-                        </div>
-                      </div>
+          </div>
+          <div class="paa container-fluid col-lg-6">
+            <div class="card h-100 p-3 pt-5 mt-2 shadow" style="min-width: 18rem;">
+              <div class="picc"><img src="./laptop.svg" width="56" height="51" class="card-img-top"></div>
 
-                </div>
-                <div class="paa container-fluid  col-lg-6">
-                    <div class="card h-100 p-3 pt-5 mt-3 shadow" style="min-width: 18rem;">
-                        <div class="picc"><img src="./watch.svg" width="59" height="75" class="card-img-top"></div>
-                        <div class="card-body">
-                            <h5>wearables</h5>
-                          <p class="card-text">Create next-generation function and fashion powered by smart wearables technology.</p>
-                        </div>
-                      </div>
-
-                </div>
+              <div class="card-body">
+                <h5>Compute</h5>
+                <p class="card-text"> Connect, create, and collaborate from virtually anywhere.</p>
               </div>
+            </div>
+          </div>
+        </div>
 
-                
+        <div class="row gx-0">
+          <div class="paa  container-fluid  col-lg-6">
+            <div class="card h-100 p-3 pt-5 mt-3 shadow" style="min-width: 18rem;">
+              <div class="picc"><img src="./XR.svg" width="67" height="75" class="card-img-top"></div>
+              <div class="card-body">
+                <h5>XR</h5>
+                <p class="card-text"> Our extended reality technologies bridge the gap between physical and virtual
+                  worlds.</p>
+              </div>
+            </div>
 
+          </div>
+          <div class="paa container-fluid  col-lg-6">
+            <div class="card h-100 p-3 pt-5 mt-3 shadow" style="min-width: 18rem;">
+              <div class="picc"><img src="./watch.svg" width="59" height="75" class="card-img-top"></div>
+              <div class="card-body">
+                <h5>wearables</h5>
+                <p class="card-text">Create next-generation function and fashion powered by smart wearables technology.
+                </p>
+              </div>
+            </div>
+
+          </div>
         </div>
 
 
 
-        <div class="qqqq col-lg-6 container-fluid px-4 h-100">
-            <div class="card h-100 mt-2 mb-4 text-white">
-                <img src="./X75.webp" class="card-img img-fluid">
-                <div class="tqq card-img-overlay img-fluid d-flex">
-                    <div class=" align-self-end my-5 ">
-                    <h2 class=" card-text"><b>Ready for 5G Advanced. The Snapdragon X75 5G Modem-RF System.</b></h2>
-                   <button id="bt4"><b>Explore</b></button>
-                </div>
-                </div>
-              </div>
-            
+      </div>
+
+
+
+      <div class="qqqq col-lg-6 container-fluid px-4 h-100">
+        <div class="card h-100 mt-2 mb-4 text-white">
+          <img src="./X75.webp" class="card-img img-fluid">
+          <div class="tqq card-img-overlay img-fluid d-flex">
+            <div class=" align-self-end my-5 ">
+              <h2 class=" card-text"><b>Ready for 5G Advanced. The Snapdragon X75 5G Modem-RF System.</b></h2>
+              <button id="bt4"><b>Explore</b></button>
+            </div>
+          </div>
         </div>
+
+      </div>
     </div>
- </div>
-<!-- ............................... -->
-<div class="big">
+  </div>
+  <!-- ............................... -->
+  <div class="big">
     <div class="container">
-    <div class="row gx-0 ">
-    <div class="divo col-lg-6">
-        <div class="kk">
-                    <div class=" mt-5 pt-5 txtq">
-                        <h1 class="text-white">On Trend.<br>
-                            Onward. OnQ.</h1>
-                    </div>
-                </div>
-            <div class="ll mx-2 h-100">
+      <div class="row gx-0 ">
+        <div class="divo col-lg-6">
+          <div class="kk">
+            <div class=" mt-5 pt-5 txtq">
+              <h1 class="text-white">On Trend.<br>
+                Onward. OnQ.</h1>
+            </div>
+          </div>
+          <div class="ll mx-2 h-100">
             <div class="txt mt-4 pt-1"></div>
             <div class="card mt-5 bg-dark mx-2  ">
-                <img src="./trade-talks-with-jill-malandrino-qualcomm-ai-v2.jpg" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title text-white">AI: what is the key to broad adoption?</h5>
-                  
-                </div>
-                
-                <div class="card-body">
-                  <a href="#" class="card-link text-white ">Read article <i class='bx bx-chevron-right'></i> </a>
-                  
-                </div>
+              <img src="./trade-talks-with-jill-malandrino-qualcomm-ai-v2.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-white">AI: what is the key to broad adoption?</h5>
+
               </div>
 
+              <div class="card-body">
+                <a href="#" class="card-link text-white ">Read article <i class='bx bx-chevron-right'></i> </a>
+
+              </div>
             </div>
-    </div>
 
-    <div class="divo col-lg-6">
-        <div class="kk mx-2">
-                    <div class=" mt-5 pt-5 txtq">
-                        <h4 class="text-white">Breakthrough innovations, real-world technology insights, and thought leadership from voices across Qualcomm.
+          </div>
+        </div>
 
-                        </h4>
-                        <button class="bt7 mt-3 mb-4">more from OnQ blog </button>
+        <div class="divo col-lg-6">
+          <div class="kk mx-2">
+            <div class=" mt-5 pt-5 txtq">
+              <h4 class="text-white">Breakthrough innovations, real-world technology insights, and thought leadership
+                from voices across Qualcomm.
 
-                    </div>
-                </div>
-            <div class="ll">
+              </h4>
+              <button class="bt7 mt-3 mb-4">more from OnQ blog </button>
+
+            </div>
+          </div>
+          <div class="ll">
             <div class="txt"></div>
             <div class="card bg-dark mx-2 ">
-                <img src="./v2_Hari-Sunset-rgba_sample01_seed48-v1.jpg" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title text-white">Advancing research and bringing generative AI to the edge</h5>
-                  
-                </div>
-                
-                <div class="card-body">
-                  <a href="#" class="card-link text-white " >Read article <i class='bx bx-chevron-right'></i> </a>
-                  
-                </div>
+              <img src="./v2_Hari-Sunset-rgba_sample01_seed48-v1.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-white">Advancing research and bringing generative AI to the edge</h5>
+
               </div>
 
+              <div class="card-body">
+                <a href="#" class="card-link text-white ">Read article <i class='bx bx-chevron-right'></i> </a>
+
+              </div>
             </div>
-    </div>
 
-
-
-</div><!-- row end -->
-<br>
-<div class="card mb-3 bg-dark">
-    <div class="row g-0">
-      <div class="col-lg-4">
-        <img src="./insiders-homepage.jpg" class="img-fluid rounded-start">
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body mt-5 bg-dark">
-          <h5 class="card-title text-white">You deserve to be a Snapdragon Insider.</h5>
-          <p class="ooo  card-text text-white ">
-            Snapdragon Insiders get behind-the-scenes access, premium experiences, and extra perks that only the Snapdragon Insiders program can deliver. Join our community to get the inside scoop and help us shape the future of Snapdragon.</p>
-          
+          </div>
         </div>
+
+
+
+      </div><!-- row end -->
+      <br>
+      <div class="card mb-3 bg-dark">
+        <div class="row g-0">
+          <div class="col-lg-4">
+            <img src="./insiders-homepage.jpg" class="img-fluid rounded-start">
+          </div>
+          <div class="col-lg-6">
+            <div class="card-body mt-5 bg-dark">
+              <h5 class="card-title text-white">You deserve to be a Snapdragon Insider.</h5>
+              <p class="ooo  card-text text-white ">
+                Snapdragon Insiders get behind-the-scenes access, premium experiences, and extra perks that only the
+                Snapdragon Insiders program can deliver. Join our community to get the inside scoop and help us shape
+                the future of Snapdragon.</p>
+
+            </div>
+          </div>
+          <div class="col-lg-2 p-3 mt-5">
+            <button id="bt6">Join now </button>
+          </div>
+        </div>
+
+
       </div>
-      <div class="col-lg-2 p-3 mt-5">
-        <button id="bt6">Join now </button>
-      </div>
-    </div>
 
-   
-  </div>
+    </div><!-- container -->
+    <p class="iii  text-white p-5 mx-4">Snapdragon is a product of Qualcomm Technologies, Inc. and/or its subsidiaries.
+    </p>
+  </div><!-- big end -->
 
-</div><!-- container -->
- <p class="iii  text-white p-5 mx-4">Snapdragon is a product of Qualcomm Technologies, Inc. and/or its subsidiaries.</p>
-</div><!-- big end -->
-
-<div class="footer container">
+  <div class="footer container">
     <div class="llogo mt-5 mb-5">
-        <img src="./download.png" alt="">
+      <img src="./download.png" alt="">
     </div>
     <div class="row">
-            <div class="saaa col-md-5">
-                <hr>
-                <div><p>Qualcomm is enabling a world where everyone and everything can be intelligently connected. We are efficiently scaling the technologies that launched the mobile revolution to the next generation of connected smart devices.</p></div>
-                <br>
-                <div class="social">
-                    <button class="zz"><i class='bx bxl-linkedin'></i></button>
-                    <button class="zz"><i class='bx bxl-twitter'></i></button>
-                    <button class="zz"><i class='bx bxl-youtube'></i></button>
-                    <button class="zz"><i class='bx bxl-instagram'></i></button>
-                </div>
+      <div class="saaa col-md-5">
+        <hr>
+        <div>
+          <p>Qualcomm is enabling a world where everyone and everything can be intelligently connected. We are
+            efficiently scaling the technologies that launched the mobile revolution to the next generation of connected
+            smart devices.</p>
+        </div>
+        <br>
+        <div class="social">
+          <button class="zz"><i class='bx bxl-linkedin'></i></button>
+          <button class="zz"><i class='bx bxl-twitter'></i></button>
+          <button class="zz"><i class='bx bxl-youtube'></i></button>
+          <button class="zz"><i class='bx bxl-instagram'></i></button>
+        </div>
 
 
-            </div>
+      </div>
 
 
-            <div class="sbbb col-md-2 col-sm-6">
-                <hr>
-                <div><b>Quick links</b></div>
-                <br>
-                <div>Products</div>
-                <div>Support</div>
-                <div>Partners</div>
-                <div>Contact us</div>
-            </div>
+      <div class="sbbb col-md-2 col-sm-6">
+        <hr>
+        <div><b>Quick links</b></div>
+        <br>
+        <div>Products</div>
+        <div>Support</div>
+        <div>Partners</div>
+        <div>Contact us</div>
+      </div>
 
 
-            <div class="sccc col-md-2 col-sm-6">
-                <hr>
-                <div><b>Company info</b></div>
-                <br>
-                <div>About us</div>
-                <div>Careers</div>
-                <div>Investors</div>
-                <div>News & media</div>
-                <div>Our businesses</div>
-                <div>Email Subscriptions</div>
-                
-           
-            </div>
-            <div class="sddd col-md-3">
-                <hr>
-                <div><b>Stay connected</b></div>
-                <div><br></div>
-                <div>Get the latest Qualcomm and industry information delivered to your inbox.</div>
-                <br>
-                
-                <div> <button id="subscribe">suscribe</button></div>
-                <br>
-                <div>Manage your subscription</div>
-            </div>
-    <div></div>
+      <div class="sccc col-md-2 col-sm-6">
+        <hr>
+        <div><b>Company info</b></div>
+        <br>
+        <div>About us</div>
+        <div>Careers</div>
+        <div>Investors</div>
+        <div>News & media</div>
+        <div>Our businesses</div>
+        <div>Email Subscriptions</div>
 
-</div>
-<hr>
-<div class="footnote">
-    <div class=" row polic ">
+
+      </div>
+      <div class="sddd col-md-3">
+        <hr>
+        <div><b>Stay connected</b></div>
+        <div><br></div>
+        <div>Get the latest Qualcomm and industry information delivered to your inbox.</div>
+        <br>
+
+        <div> <button id="subscribe">suscribe</button></div>
+        <br>
+        <div>Manage your subscription</div>
+      </div>
+      <div></div>
+
+    </div>
+    <hr>
+    <div class="footnote">
+      <div class=" row polic ">
         <div class=" collection col-md-9">
 
-    <span>Terms of Use</span>
-    <span class="p-2">Privacy</span>
-    <span class="p-2">Cookie Policy</span>
-    <span class="p-2">Cookie Settings</span>
-    
+          <span>Terms of Use</span>
+          <span class="p-2">Privacy</span>
+          <span class="p-2">Cookie Policy</span>
+          <span class="p-2">Cookie Settings</span>
+
         </div>
-        
+
         <div class="movedleft col-md-3">
-        <p>Language: English (US)</p>
+          <p>Language: English (US)</p>
         </div>
 
-   </div>
+      </div>
 
 
-   <div class="terms">
-    <p>© 2015-2023 Qualcomm Technologies, Inc. and/or its affiliated companies.</p>
-    <p>   Snapdragon and Qualcomm branded products are products of Qualcomm Technologies, Inc. and/or its subsidiaries. Qualcomm patented technologies are licensed by Qualcomm Incorporated.</p>
-    <p> Note: Certain product kits, tools and materials may require you to accept additional terms and conditions before accessing or using those items.</p>
-    <p>References to "Qualcomm" may mean Qualcomm Incorporated, or subsidiaries or business units within the Qualcomm corporate structure, as applicable.</p>
-    <p>Qualcomm Incorporated includes our licensing business, QTL, and the vast majority of our patent portfolio. Qualcomm Technologies, Inc., a subsidiary of Qualcomm Incorporated, operates, along with its subsidiaries, substantially all of our engineering, research and development functions, and substantially all of our products and services businesses, including our QCT semiconductor business.</p>
-    <p> Materials that are as of a specific date, including but not limited to press releases, presentations, blog posts and webcasts, may have been superseded by subsequent events or disclosures.</p>
-    <p>Nothing in these materials is an offer to sell any of the components or devices referenced herein.</p>
-   </div>
-</div>
+      <div class="terms">
+        <p>© 2015-2023 Qualcomm Technologies, Inc. and/or its affiliated companies.</p>
+        <p> Snapdragon and Qualcomm branded products are products of Qualcomm Technologies, Inc. and/or its
+          subsidiaries. Qualcomm patented technologies are licensed by Qualcomm Incorporated.</p>
+        <p> Note: Certain product kits, tools and materials may require you to accept additional terms and conditions
+          before accessing or using those items.</p>
+        <p>References to "Qualcomm" may mean Qualcomm Incorporated, or subsidiaries or business units within the
+          Qualcomm corporate structure, as applicable.</p>
+        <p>Qualcomm Incorporated includes our licensing business, QTL, and the vast majority of our patent portfolio.
+          Qualcomm Technologies, Inc., a subsidiary of Qualcomm Incorporated, operates, along with its subsidiaries,
+          substantially all of our engineering, research and development functions, and substantially all of our
+          products and services businesses, including our QCT semiconductor business.</p>
+        <p> Materials that are as of a specific date, including but not limited to press releases, presentations, blog
+          posts and webcasts, may have been superseded by subsequent events or disclosures.</p>
+        <p>Nothing in these materials is an offer to sell any of the components or devices referenced herein.</p>
+      </div>
+    </div>
 
 
 
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    >
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
 
-</script>
-  </body>
+      </script>
+    <script src="./index.js"></script>
+</body>
+
 </html>
